@@ -1,0 +1,43 @@
+<div class="div-padre" >
+    <h1>{{title}}</h1>
+    <div style="text-align:center;">
+        <h2>Numeric Counter</h2>
+        <p>value: {{counter}}</p>
+    </div>
+    <div style="display: flex; gap: 7px;">
+        <button (click)="increase()">+</button>
+        <button (click)="deincrement()">-</button>
+        <button (click)="multiply()" >*</button>
+        <button (click)="division()">/</button>
+        <button (click)="sqar()">X2</button>
+        <button (click)="cubo()">X3</button>
+    </div>
+
+    <div style="text-align: center;">
+        <h2>Charater Counter</h2>
+        <input type="text" [(ngModel)]="str"  (ngModelChange)="ochange()" >
+    </div>
+    <div style="display: flex;gap: 15px;">
+        <div style="text-align: center;">
+            <h4>Text Length</h4>
+            <p>{{textLength}}</p>
+        </div>
+        <div style="text-align: center;">
+            <h4>Alphabets</h4>
+            <p>{{alphabets}}</p>
+        </div>
+        <div style="text-align: center;">
+            <h4>Numbers</h4>
+            <p>{{numCount}}</p>
+        </div>
+        <div style="text-align: center;">
+            <h4>Space</h4>
+            <p>{{space}}</p>
+        </div>
+    </div>
+    
+    
+
+</div>
+
+
